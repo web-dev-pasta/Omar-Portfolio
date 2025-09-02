@@ -86,6 +86,7 @@ function NavBar() {
             return (
               <Link
                 to={`${e}`}
+                href={`#${e}`}
                 key={i}
                 ref={(el) => (menuLinks.current[i] = el)}
                 className=" cursor-pointer transform md:hover:translate-x-2 uppercase text-white/80 hover:text-white outline-none transition-all duration-200 w-fit"
