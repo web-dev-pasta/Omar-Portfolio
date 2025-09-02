@@ -100,8 +100,8 @@ const Works = () => {
 
   const handleMouseMove = (e) => {
     if (window.innerWidth < 768) return;
-    mouse.current.x = e.clientX + 24;
-    mouse.current.y = e.clientY + 24;
+    mouse.current.x = e.clientX + 20;
+    mouse.current.y = e.clientY + 250;
     moveX.current(mouse.current.x);
     moveY.current(mouse.current.y);
   };
