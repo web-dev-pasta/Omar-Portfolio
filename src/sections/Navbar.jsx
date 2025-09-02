@@ -42,28 +42,27 @@ function NavBar() {
       );
 
     ScrollTrigger.create({
-  trigger: document.body,
-  start: 0,
-  end: "max",
-  onUpdate: (self) => {
-    const scrollPos = self.scroll(); 
-    const direction = self.direction;
+      trigger: document.body,
+      start: 0,
+      end: "max",
+      onUpdate: (self) => {
+        const scrollPos = self.scroll();
+        const direction = self.direction;
 
-    if (scrollPos > 300) {
-      if (direction === -1) {
-        toggleBtn.current.classList.remove("not-active");
-        setShowToggle(true);
-      } else {
-        toggleBtn.current.classList.add("not-active");
-        setShowToggle(false);
-      }
-    } else {
-      toggleBtn.current.classList.remove("not-active");
-      setShowToggle(true);
-    }
-  },
-});
-
+        if (scrollPos > 300) {
+          if (direction === -1) {
+            toggleBtn.current.classList.remove("not-active");
+            setShowToggle(true);
+          } else {
+            toggleBtn.current.classList.add("not-active");
+            setShowToggle(false);
+          }
+        } else {
+          toggleBtn.current.classList.remove("not-active");
+          setShowToggle(true);
+        }
+      },
+    });
   }, []);
   const toggleMenu = () => {
     if (isActive) {
