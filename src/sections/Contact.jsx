@@ -1,6 +1,5 @@
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
 import Marquee from "../components/Marquee";
-import RotatingText from "../components/RotatingText";
 function Contact() {
   const bio = "You Dream It, I Code it";
   const name = "contact";
