@@ -37,6 +37,16 @@ function About() {
         scrub: true,
       },
     });
+    gsap.to(aboutSection.current, {
+      y: -80,
+      scrollTrigger: {
+        trigger: aboutSection.current,
+        start: "bottom 65%",
+        end: "bottom top",
+        scrub: true,
+        // markers: true,
+      },
+    });
     gsap.from(".man-img", {
       opacity: 0,
       scrollTrigger: {
@@ -67,7 +77,7 @@ function About() {
     <section
       id="about"
       ref={aboutSection}
-      className="bg-black rounded-b-[2rem] py-16"
+      className="bg-black rounded-b-[2rem] py-16 min-h-screen"
     >
       <AnimatedHeaderSection
         bio={bio}
