@@ -9,11 +9,7 @@ function Hero() {
   const thirdSpan = "results driven webs/apps";
   const mobileSpan = "High-end webistes right between your hands";
   return (
-    <section
-      id="home"
-      className="flex flex-col justify-end"
-      style={{ minHeight: `100dvh` }}
-    >
+    <section id="home" className="flex flex-col justify-end min-h-screen">
       <div className="fixed inset-0 -z-10">
         <Particles />
       </div>
